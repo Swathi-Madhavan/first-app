@@ -1,24 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Nav from "./components/Nav";
+import Main from "./components/Main";
+import Banner from "./components/Banner";
+import About from "./components/About";
+import Interest from "./components/Interest";
+import Projects from "./components/Projects";
+import GetInTouch from "./components/GetInTouch";
+import Footer from "./components/Footer";
+import {
+  btnList,
+  iconsList,
+  menuData,
+  myIntroData,
+  headerData,
+  abtData,
+  skillData,
+  bigBoxData,
+  topicData,
+  techIconsData,
+  footerData,
+} from "./data";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav header={headerData} menuItems={menuData} />
+      <Main>
+        <Banner
+          myintro={myIntroData}
+          socialMediaIcons={iconsList}
+          bannerButtons={btnList}
+        />
+        <About {...abtData} />
+        <Interest data={skillData} />
+        <Projects
+          bigBox={bigBoxData}
+          topic={topicData}
+          techIcons={techIconsData}
+        />
+        <GetInTouch />
+      </Main>
+      <Footer data={footerData} />
     </div>
   );
 }

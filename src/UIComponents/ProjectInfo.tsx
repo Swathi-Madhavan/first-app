@@ -1,3 +1,4 @@
+import React from "react";
 import { TopicProps } from "../model";
 
 export default function ProjectInfo({

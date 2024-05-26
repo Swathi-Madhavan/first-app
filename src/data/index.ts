@@ -10,6 +10,7 @@ import {
   TopicProps,
   TechIconsProps,
   FooterLinkProp,
+  DataSource,
 } from "../model";
 
 export const headerData: Header = {
@@ -102,21 +103,57 @@ export const skillData: Array<SkillBoxProps> = [
   },
 ];
 
-export const bigBoxData: BigBoxProps = {
-  imgSrc: `${process.env.PUBLIC_URL}/images/website-preview.png`,
-  alt: "website-preview",
-};
+export const bigBoxData: Array<BigBoxProps> = [
+  {
+    imgSrc: `${process.env.PUBLIC_URL}/images/website-preview.png`,
+    alt: "website-preview",
+  },
+  {
+    imgSrc: `${process.env.PUBLIC_URL}/images/calculator-app`,
+    alt: "calculator-preview",
+  },
+  {
+    imgSrc: `${process.env.PUBLIC_URL}/images/Todo-app.png`,
+    alt: "todo-preview",
+  },
+];
 
-export const topicData: TopicProps = {
-  topicName: "WEB DEVELOPMENT",
-  briefMe:
-    "I have created this portfolio website based on the knowledge gained in the areas such as HTML,CSS,JAVASCRIPT. This website contains the profile portfolio of myself which includes introduction,about me and the areas where I interested in. I will be constantly upgrading this profile accordingly.",
-  topicName2: "Personal Website",
-};
+export const topicData: Array<TopicProps> = [
+  {
+    topicName: "WEB DEVELOPMENT",
+    briefMe:
+      "I have created this portfolio website based on the knowledge gained in the areas such as HTML,CSS,JAVASCRIPT. This website contains the profile portfolio of myself which includes introduction,about me and the areas where I interested in. I will be constantly upgrading this profile accordingly.",
+    topicName2: "Personal Website",
+  },
+  {
+    topicName: "WEB DEVELOPMENT",
+    briefMe:
+      "I have created a Todo app using react, typescript and material UI. It's an Multi-page app. I have used react router to create multi-page application. To share the state across all the pages, I have used redux and redux-tool kit.",
+    topicName2: "TO-Do APP",
+  },
+  {
+    topicName: "WEB DEVELOPMENT",
+    briefMe:
+      "This Calculator app created using react, typescript and material UI. It's an simple react single page application to demonstrate my react skills.",
+    topicName2: "Calculator-APP",
+  },
+];
 
 export const techIconsData: Array<TechIconsProps> = [
   {
     techImg: "fa fa-html5 html-icon",
+  },
+  {
+    techImg: "fa-brands fa-css3-alt css-icon",
+  },
+  {
+    techImg: "fa-brands fa-js javscript-icon",
+  },
+];
+
+export const toDoIconsData: Array<TechIconsProps> = [
+  {
+    techImg: "fa-brands fa-react css-icon",
   },
   {
     techImg: "fa-brands fa-css3-alt css-icon",
@@ -141,5 +178,47 @@ export const footerData: Array<FooterLinkProp> = [
     footClassName: "contact",
     link: "#get-in-touch",
     txt: "CONTACT",
+  },
+];
+
+export const projectsData: Array<DataSource> = [
+  {
+    bigBox: {
+      imgSrc: `${process.env.PUBLIC_URL}/images/website-preview.png`,
+      alt: "website-preview",
+    },
+    techIcons: techIconsData,
+    topic: {
+      topicName: "WEB DEVELOPMENT",
+      briefMe:
+        "I have created this portfolio website based on the knowledge gained in the areas such as HTML,CSS,JAVASCRIPT. This website contains the profile portfolio of myself which includes introduction,about me and the areas where I interested in. I will be constantly upgrading this profile accordingly.",
+      topicName2: "Personal Website",
+    },
+  },
+  {
+    bigBox: {
+      imgSrc: `${process.env.PUBLIC_URL}/images/calculator-app1.png`,
+      alt: "calculator-preview",
+    },
+    techIcons: toDoIconsData,
+    topic: {
+      topicName: "WEB DEVELOPMENT",
+      briefMe:
+        "This Calculator app created using react, typescript and material UI. It's an simple react single page application to demonstrate my react skills.",
+      topicName2: "Calculator-APP",
+    },
+  },
+  {
+    bigBox: {
+      imgSrc: `${process.env.PUBLIC_URL}/images/Todo-app.png`,
+      alt: "todo-preview",
+    },
+    techIcons: toDoIconsData,
+    topic: {
+      topicName: "WEB DEVELOPMENT",
+      briefMe:
+        "I have created a Todo app using react, typescript and material UI. It's an Multi-page app. I have used react router to create multi-page application. To share the state across all the pages, I have used redux and redux-tool kit.",
+      topicName2: "TO-DO APP",
+    },
   },
 ];

@@ -20,6 +20,7 @@ import {
   topicData,
   techIconsData,
   footerData,
+  projectsData,
 } from "./data";
 
 function App() {
@@ -35,10 +36,9 @@ function App() {
         <About {...abtData} />
         <Interest data={skillData} />
         <Projects
-          bigBox={bigBoxData}
-          topic={topicData}
-          techIcons={techIconsData}
+          data={projectsData}
         />
+
         <GetInTouch />
       </Main>
       <Footer data={footerData} />

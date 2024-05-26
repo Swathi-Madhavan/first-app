@@ -66,10 +66,20 @@ export interface TechIconsProps {
   techImg: string;
 }
 
-export interface ProjectProps {
+export interface DataSource {
   bigBox: BigBoxProps;
   topic: TopicProps;
   techIcons: Array<TechIconsProps>;
+}
+export interface ProjectProps {
+  data: Array<DataSource>;
+}
+
+export interface ListOfProjectsProps {
+  bigBox: BigBoxProps;
+  topic: TopicProps;
+  techIcons: Array<TechIconsProps>;
+  isFirstItem?: boolean;
 }
 
 export interface FooterLinkProp {

@@ -1,3 +1,4 @@
+import React from "react";
 import { AboutProps } from "../model";
 
 export default function About({ title, desc }: AboutProps) {

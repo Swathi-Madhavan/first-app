@@ -1,3 +1,4 @@
+import React from "react";
 import { SkillBoxProps } from "../model";
 
 export default function SkillBox({ skillName, skills }: SkillBoxProps) {

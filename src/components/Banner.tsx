@@ -1,3 +1,4 @@
+import React from "react";
 import BannerButtons from "../UIComponents/BannerButtons";
 import SocialMediaIcons from "../UIComponents/SocialMediaIcons";
 import { BannerProps } from "../model";

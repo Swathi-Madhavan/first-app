@@ -1,3 +1,4 @@
+import React from "react";
 import { BannerButtonsProps } from "../model";
 
 export default function BannerButtons({

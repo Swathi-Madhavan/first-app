@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function GetInTouch() {
   return (
     <section className="container5" id="get-in-touch">
@@ -6,7 +8,7 @@ export default function GetInTouch() {
       </div>
       <div className="email">
         <p>
-          I'm currently open to new opportunities, inbox is always open! Find me
+          I&apos;m currently open to new opportunities, inbox is always open! Find me
           everywhere @swathipattam123
         </p>
       </div>

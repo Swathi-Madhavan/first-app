@@ -1,3 +1,4 @@
+import React from "react";
 import { FooterProps } from "../model";
 
 export default function Footer({ data }: FooterProps) {
@@ -6,7 +7,11 @@ export default function Footer({ data }: FooterProps) {
     <footer className="footer">
       <div className="footer-row">
         {data.map((value, index) => (
-          <a className={value.footClassName} href={value.link}>
+          <a
+            key={index.toString()}
+            className={value.footClassName}
+            href={value.link}
+          >
             {value.txt}
           </a>
         ))}

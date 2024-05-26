@@ -1,3 +1,4 @@
+import React from "react";
 import { SocialMediaIconsProps } from "../model";
 
 export default function SocialMediaIcons({
